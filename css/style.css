@@ -1,0 +1,177 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0px;
+    margin:0px;
+    background-color: whitesmoke;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+header{
+    background:rgb(255, 72, 0);
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: black 6px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:black;
+    font-weight:bold;
+}
+
+header a:hover{
+    color: #fff;
+    font-weight:bold;
+}
+
+#showcase{
+    min-height: 400px;
+    background-image: url('../images/Showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 72, 0);
+}
+
+#showcase h1{
+    margin-top: 180px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+#showcase p{
+    font-size: 20px;
+    margin-top: 0px;
+    color: white;
+}
+
+.button_1{
+    height: 38px;
+    background: rgb(255, 72, 0);
+    color: white;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width:50%;
+}
+
+#boxes .box img{
+    width: 95px;
+}
+
+aside#sidebar{
+    float: right;
+    width:30%;
+    margin-top:10px;
+
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 92%;
+    padding: 5px;
+}
+
+article{
+    float:left;
+    width:65%;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: rgb(255, 72, 0) solid 1px;
+    margin-bottom:5px;
+}
+
+footer{
+    padding: 20px;
+    margin-top:20px;
+    color: white;
+    background-color: rgb(255, 72, 0);
+    text-align: center;
+
+}
+
+@media(max-width:768px){
+    header #branding, header nav, header nav li, #boxes.box, article#main-col, aside#sidebar {
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom:20px;
+    }
+
+    #showcase h1{
+        margin-top:40px; 
+    }
+
+    .quote button{
+        width:100%;
+        display:block;
+    }
+
+    .quote input, .quote textarea{
+        width:100%;
+        margin-bottom:5px;
+    }
+
+}
+
+
+
